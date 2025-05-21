@@ -15,6 +15,5 @@ class DispatchSchema(BaseModel):
     weight: Optional[int] = None
     note: Optional[str] = None
     delievery_date: Optional[date] = None
-    code: Optional[str] = None
     new_recipient: Optional[RecipientSchema] = None
 
