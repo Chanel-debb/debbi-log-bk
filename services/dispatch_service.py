@@ -47,8 +47,7 @@ class RecipientService:
             content=dto.content,
             weight=dto.weight,
             note=dto.note or None,
-            delievery_date=dto.delievery_date or date.today(),
-            code=dto.code or generate_dispatch_code()
+            delievery_date=dto.delievery_date or date.today()
         )
 
 
