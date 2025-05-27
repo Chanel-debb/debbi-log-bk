@@ -32,5 +32,5 @@ class Dispatch(BaseModel):
     weight = fields.IntField()
     note = fields.TextField()
     delievery_date = fields.DateField()
-    code = fields.CharField(16, unique=True)
+    code = fields.CharField(16, default=enerate_dispatch_code, null=True, unique=True)
     
